@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import RegisterReactBootstrap from './components/RegisterReactBootstrap';
 
 function App() {
   const handleRegistration = (e)=>{
@@ -9,14 +10,8 @@ function App() {
     console.log( email, password );
   }
   return (
-    <div className="App">
-      <form onSubmit={ handleRegistration }>
-        <input type="email" name="email" id="" placeholder='Enter your Email'/>
-        <br />
-        <input type="password" name="password" id="" placeholder='Enter Your Password'/>
-        <br />
-        <button type="submit">Register</button>
-      </form>
+    <div className="">
+      <RegisterReactBootstrap />
     </div>
   );
 }
