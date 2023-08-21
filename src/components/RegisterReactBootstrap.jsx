@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { createUserWithEmailAndPassword, getAuth } from "firebase/auth";
 import app from '../firebase/firebase.init';
+import { Link } from 'react-router-dom';
 
 const auth = getAuth(app);
 const RegisterReactBootstrap = () => {
@@ -42,7 +43,8 @@ const RegisterReactBootstrap = () => {
                 <Button variant="primary" type="submit">
                     Register
                 </Button>
-    </Form>
+            </Form>
+            <p>Already have an account? Please <small><Link to='/login'>Login</Link></small></p>
         </div>
     );
 };
